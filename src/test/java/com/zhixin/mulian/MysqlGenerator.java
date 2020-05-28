@@ -120,7 +120,7 @@ public class MysqlGenerator {
         String tmp = MysqlGenerator.class.getResource("").getPath();
         String codeDir = tmp.substring(0, tmp.indexOf("/target"));
         basePath = codeDir + "/src/main/java";
-        mapperPath = basePath + "/" + packageName.replace(".", "/") + "/mapper";
+        mapperPath = codeDir + "/src/main/resources/mapper";
         System.out.println("basePath = " + basePath + "\nmapperPath = " + mapperPath);
         gc.setOutputDir(basePath);
         gc.setAuthor(author);
@@ -128,7 +128,7 @@ public class MysqlGenerator {
         gc.setServiceName("I%sService");
         gc.setFileOverride(true);
         gc.setIdType(IdType.UUID);
-        gc.setSwagger2(true);
+        gc.setSwagger2(false);
         return gc;
     }
 
