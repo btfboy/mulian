@@ -1,18 +1,23 @@
 package com.zhixin.mulian.utils;
 
 import java.util.List;
+
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.util.CollectionUtils;
 
+@Configuration
 public class RedisTool {
-	 @Autowired
+	
     private RedisTemplate<String, Object> redisTemplate;
 
+    public void setRedisTemplate(RedisTemplate<String, Object> redisTemplate) {
+        this.redisTemplate = redisTemplate;
+    }
     /**
      * 指定缓存失效时间
      * @param key

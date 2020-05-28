@@ -48,7 +48,7 @@ spring:
           url: jdbc:mysql://47.98.112.186:3306/mulian
           username: root
           password: mySelf@123
-          driver-class-name: com.mysql.jdbc.Driver
+          driver-class-name: com.mysql.cj.jdbc.Driver
           # 多数据源配置
           #multi-datasource1:
           #url: jdbc:mysql:

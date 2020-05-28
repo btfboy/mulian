@@ -3,7 +3,12 @@ package com.zhixin.mulian.service.impl;
 import com.zhixin.mulian.entity.User;
 import com.zhixin.mulian.mapper.UserMapper;
 import com.zhixin.mulian.service.IUserService;
+import com.zhixin.mulian.utils.Result;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,5 +21,14 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
+	
+	@Autowired
+	private UserMapper userMapper;
+
+	@Override
+	public Result<Object> getAllUser() {
+		List<User> list=userMapper.selectList(null);
+		return Result.ok(list);
+	}
 
 }

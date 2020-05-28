@@ -28,7 +28,7 @@ public class MysqlGenerator {
 
     private static final String database = "mulian";
     private static final String url = "jdbc:mysql://47.98.112.186:3306/" + database;
-    private static final String driverName = "com.mysql.jdbc.Driver";
+    private static final String driverName = "com.mysql.cj.jdbc.Driver";
     private static final String userName = "root";
     private static final String password = "mySelf@123";
 
