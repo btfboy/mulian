@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.util.CollectionUtils;
 
-@Configuration
+//@Configuration
 public class RedisTool {
 	
     private RedisTemplate<String, Object> redisTemplate;
