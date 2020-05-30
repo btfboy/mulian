@@ -29,4 +29,9 @@ public class UserController {
 	public Result<Object> users(){
 		return userService.getAllUser();
 	}
+	
+	@GetMapping("/openid")
+	public Result<Object> getOpenId(){
+		return userService.getOpenId();
+	}
 }

@@ -32,8 +32,13 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 	@Override
 	public Result<Object> getAllUser() {
 		List<User> list=userMapper.selectList(null);
-		redisTool.set("wechat_token", 11111);
 		return Result.ok(list);
+	}
+
+	@Override
+	public Result<Object> getOpenId() {
+		
+		return null;
 	}
 
 }

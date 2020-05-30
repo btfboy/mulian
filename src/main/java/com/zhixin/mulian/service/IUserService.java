@@ -16,4 +16,6 @@ public interface IUserService extends IService<User> {
 
 	Result<Object> getAllUser();
 
+	Result<Object> getOpenId();
+
 }
