@@ -8,14 +8,12 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * <p>
  *  服务类
  * </p>
- *
- * @author shi
  * @since 2020-05-28
  */
 public interface IUserService extends IService<User> {
 
 	Result<Object> getAllUser();
 
-	Result<Object> getOpenId();
+	Result<Object> getOpenId(String code);
 
 }

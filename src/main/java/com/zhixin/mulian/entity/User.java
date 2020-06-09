@@ -33,8 +33,6 @@ public class User implements Serializable {
 
     private String unionid;
 
-    private String sessionKey;
-
     private String phone;
 
     private String createDate;
@@ -48,5 +46,7 @@ public class User implements Serializable {
     private String country;
 
     private String province;
+    
+    private String bzName;
 
 }

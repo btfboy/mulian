@@ -11,5 +11,7 @@ public class Constant {
 	public static final int SC_NO_USER = 0;
 
 	public static final int SC_API_NO_USER_CODE = 0;
+	
+	public static final String USERNAME="游客";
 
 }

@@ -31,7 +31,7 @@ public class UserController {
 	}
 	
 	@GetMapping("/openid")
-	public Result<Object> getOpenId(){
-		return userService.getOpenId();
+	public Result<Object> getOpenId(String code){
+		return userService.getOpenId(code);
 	}
 }
